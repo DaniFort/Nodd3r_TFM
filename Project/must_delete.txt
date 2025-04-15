@@ -1,0 +1,41 @@
+dataset\train\W\W (134).jpg
+dataset\train\del\del (1915).jpg
+dataset\train\del\del (1919).jpg
+dataset\train\del\del (1997).jpg
+dataset\train\del\del (217).jpg
+dataset\train\del\del (218).jpg
+dataset\train\del\del (22).jpg
+dataset\train\del\del (24).jpg
+dataset\train\del\del (2467).jpg
+dataset\train\del\del (2468).jpg
+dataset\train\del\del (25).jpg
+dataset\train\del\del (268).jpg
+dataset\train\del\del (269).jpg
+dataset\train\del\del (34).jpg
+dataset\train\del\del (37).jpg
+dataset\train\del\del (38).jpg
+dataset\train\del\del (39).jpg
+dataset\train\del\del (862).jpg
+dataset\train\del\del1109.jpg
+dataset\train\del\del1113.jpg
+dataset\train\del\del1114.jpg
+dataset\train\del\del1191.jpg
+dataset\train\del\del1661.jpg
+dataset\train\del\del1662.jpg
+dataset\train\I\I (121).jpg
+dataset\train\M\M (1955).jpg
+dataset\train\M\M (1965).jpg
+dataset\train\M\M (2564).jpg
+dataset\train\M\M (2596).jpg
+dataset\train\M\M (901).jpg
+dataset\train\M\M (902).jpg
+dataset\train\U\U (1380).jpg
+dataset\train\U\U (1382).jpg
+dataset\train\U\U (1384).jpg
+dataset\train\U\U (1386).jpg
+dataset\train\U\U (1600).jpg
+dataset\train\U\U (1601).jpg
+dataset\train\W\W (134).jpg
+dataset\test\P\P (2856).jpg
+dataset\validation\M\M329.jpg
+dataset\validation\M\M331.jpg

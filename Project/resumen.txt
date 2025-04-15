@@ -1,0 +1,79 @@
+0 deleted from A
+187 deleted from B
+3 deleted from C
+8 deleted from D
+85 deleted from del
+2 deleted from E
+8 deleted from F
+21 deleted from G
+36 deleted from H
+90 deleted from I
+16 deleted from J
+61 deleted from K
+46 deleted from L
+303 deleted from M
+176 deleted from N
+103 deleted from O
+52 deleted from P
+10 deleted from Q
+223 deleted from R
+0 deleted from S
+50 deleted from space
+1 deleted from T
+
+A has 1466 images and 900 detectable elements and 86 no detected
+ in 0:01:07.861142
+B has 1972 images and 900 detectable elements and 581 no detected
+ in 0:01:27.772234
+C has 1911 images and 900 detectable elements and 279 no detected
+ in 0:01:27.504215
+D has 1675 images and 900 detectable elements and 77 no detected
+ in 0:01:17.299950
+del has 6836 images and 609 detectable elements and 3174 no detected
+ in 0:05:25.904580
+E has 1399 images and 900 detectable elements and 78 no detected
+ in 0:01:09.020040
+F has 1351 images and 900 detectable elements and 37 no detected
+ in 0:01:01.701591
+G has 2012 images and 900 detectable elements and 256 no detected
+ in 0:01:30.196134
+H has 1426 images and 900 detectable elements and 123 no detected
+ in 0:01:09.230571
+I has 1888 images and 900 detectable elements and 145 no detected
+ in 0:01:27.351303
+J has 2469 images and 900 detectable elements and 289 no detected
+ in 0:01:46.571272
+K has 1737 images and 900 detectable elements and 99 no detected
+ in 0:01:19.298348
+L has 1522 images and 900 detectable elements and 88 no detected
+ in 0:01:10.658934
+M has 7900 images and 688 detectable elements and 3920 no detected
+ in 0:06:14.925934
+N has 7121 images and 900 detectable elements and 3424 no detected
+ in 0:05:02.095565
+O has 1985 images and 900 detectable elements and 166 no detected
+ in 0:01:34.358281
+P has 3675 images and 900 detectable elements and 1514 no detected
+ in 0:02:38.579043
+Q has 4511 images and 900 detectable elements and 1458 no detected
+ in 0:03:21.516191
+R has 1282 images and 900 detectable elements and 124 no detected
+ in 0:00:57.760119
+S has 1804 images and 900 detectable elements and 104 no detected
+ in 0:01:27.207478
+space has 3545 images and 900 detectable elements and 1605 no detected
+ in 0:02:32.830407
+T has 1655 images and 900 detectable elements and 129 no detected
+ in 0:01:17.548170
+U has 3408 images and 900 detectable elements and 733 no detected
+ in 0:02:36.278736
+V has 1992 images and 900 detectable elements and 88 no detected
+ in 0:01:33.901307
+W has 1954 images and 900 detectable elements and 195 no detected
+ in 0:01:30.223024
+X has 1769 images and 900 detectable elements and 108 no detected
+ in 0:01:22.985022
+Y has 1974 images and 900 detectable elements and 87 no detected
+ in 0:01:34.030016
+Z has 1608 images and 900 detectable elements and 70 no detected
+ in 0:01:31.390299
