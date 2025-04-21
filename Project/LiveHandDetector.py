@@ -3,11 +3,11 @@ import numpy as np
 
 from cvzone.HandTrackingModule import HandDetector
 import tensorflow as tf
-
+import time
 
 
 LETTERS = ['A', 'B', 'C', 'D',  'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z','del', 'space']
-model_path = 'Trained/ASP_model_7.keras'
+model_path = 'Trained/ASP_2_model_12.keras'
 model = tf.keras.models.load_model(model_path)
 
 cap = cv2.VideoCapture(0)
@@ -35,4 +35,6 @@ while True:
         except:
             pass
     cv2.imshow('Image',img)
-    cv2.waitKey(1)
+    key = cv2.waitKey(1)
+    if key == ord('q'):
+        break

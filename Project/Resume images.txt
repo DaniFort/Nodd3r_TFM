@@ -1,0 +1,29 @@
+A has 3648 images and  2000 detectable elements and 1112 no detected
+b in 0:03:26.879958B has 5042 images and  2000 detectable elements and 2177 no detected
+c in 0:04:37.300774C has 5351 images and  2000 detectable elements and 2510 no detected
+d in 0:04:58.521143D has 4292 images and  2000 detectable elements and 1336 no detected
+e in 0:03:55.991006E has 4490 images and  2000 detectable elements and 1837 no detected
+f in 0:04:23.177180F has 3439 images and  2000 detectable elements and 572 no detected
+g in 0:03:26.532013G has 5307 images and  2000 detectable elements and 1710 no detected
+h in 0:04:46.732012H has 4576 images and  2000 detectable elements and 1721 no detected
+i in 0:04:16.102196I has 5286 images and  2000 detectable elements and 2252 no detected
+j in 0:04:55.170355J has 5140 images and  2000 detectable elements and 1555 no detected
+k in 0:04:49.058911K has 4188 images and  2000 detectable elements and 1323 no detected
+l in 0:04:09.942592L has 3912 images and  2000 detectable elements and 745 no detected
+m in 0:03:41.599083M has 7900 images and  602 detectable elements and 6721 no detected
+n in 0:06:59.813735N has 7932 images and  892 detectable elements and 6153 no detected
+o in 0:06:39.158759O has 4343 images and  2000 detectable elements and 1695 no detected
+p in 0:04:12.636515P has 7343 images and  2000 detectable elements and 4351 no detected
+q in 0:06:38.585827Q has 7954 images and  1344 detectable elements and 5284 no detected
+r in 0:07:13.680407R has 4458 images and  2000 detectable elements and 1739 no detected
+s in 0:04:40.550655S has 4416 images and  2000 detectable elements and 1880 no detected
+t in 0:04:35.644078T has 3410 images and  2000 detectable elements and 775 no detected
+u in 0:03:34.212199U has 7827 images and  2000 detectable elements and 4520 no detected
+v in 0:07:31.390876V has 5448 images and  2000 detectable elements and 2427 no detected
+w in 0:05:27.654040W has 4769 images and  2000 detectable elements and 1906 no detected
+x in 0:04:29.906705X has 4079 images and  2000 detectable elements and 1571 no detected
+y in 0:03:48.424402Y has 5577 images and  2000 detectable elements and 2374 no detected
+z in 0:04:58.022634Z has 4149 images and  2000 detectable elements and 1411 no detected
+del in 0:03:50.776958del has 6836 images and  532 detectable elements and 5832 no detected
+space in 0:06:02.371227space has 7071 images and  1856 detectable elements and 4489 no detected
+ in 0:06:23.247778task done in 2:18:33.094914
