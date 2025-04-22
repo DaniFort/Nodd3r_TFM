@@ -2,13 +2,14 @@ import cv2
 from utils.image_flow import get_frame_info,update_frame
 
 class TextField():
-    def __init__(self, text, point:tuple,font_face = cv2.FONT_HERSHEY_PLAIN, color = (255,0,0),font_scale = 2,thickness=2):
+    def __init__(self, text, point:tuple,font_face = cv2.FONT_HERSHEY_PLAIN, color = (255,0,0),font_scale = 2,thickness=2,line_spacing = 10):
         self.text = text
         self.point = point
         self.font_face = font_face
         self.color = color
         self.font_scale = font_scale
         self.thickness = thickness
+        self.line_spacing = line_spacing
     
     def update(self):
         pass

@@ -1,5 +1,5 @@
 #text things
-writed_text = 'aqui se escribira el texto'
+writed_text = 'aqui se escribira el te xto\ndq rfw qerfw ejfqf gewga dpjasp fjaspfj apsfjpa sjfasf'
 
 def get_writed_text():
     global writed_text

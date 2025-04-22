@@ -9,17 +9,13 @@ class RunningLayout(Layout):
 
         
     def start(self):
-        super().start()
         animated_circle = AnimatedCircle(115,110,min_radius=13,max_radius=100,max_thickness=30,min_thickness=3,animation_speed=2)
         writed_text_field = WritedTextField(
-            point=(30, 100),
+            point=(20, 650),
             # point=(0, get_frame_size()[1]-100),
-            font_scale=4
+            font_scale=2,
+            line_spacing = 20
         )
         self.add_element(animated_circle)
         self.add_element(writed_text_field)
-        for i in self.elements:
-            try:
-                i.start()
-            except:
-                pass
+        super().start()

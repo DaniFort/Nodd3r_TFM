@@ -11,11 +11,13 @@ class Layout():
         return element
     
     def start(self):
-        for i in self.elements:
-            try:
-                i.start()
-            except:
-                pass    
+        # for i in self.elements:
+        #     try:
+        #         i.start()
+        #     except:
+        #         pass    
+        for i in self.elements: #only for test
+            i.start()
     
     def update(self):
         # for i in self.elements:

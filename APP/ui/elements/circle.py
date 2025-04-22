@@ -9,6 +9,9 @@ class Circle:
         self.thickness = thickness
         self.color = color
     
+    def start(self):
+        pass
+    
     def update(self):
         pass
     

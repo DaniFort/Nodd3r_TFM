@@ -34,5 +34,4 @@ class AnimatedCircle(Circle):
     def draw(self):
         super().draw()
         img = get_frame_info()
-        # img = cv2.putText(img,str(self.can_write), (300,300), cv2.FONT_HERSHEY_COMPLEX,3,(255,0,0),3)
         

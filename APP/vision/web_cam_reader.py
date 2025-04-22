@@ -4,9 +4,13 @@ from utils.app_manager import get_writed_text,add_update_to_writed_text,get_is_a
 class WebCamReader():
     def __init__(self):
         self.cap = cv2.VideoCapture(0)
+        self.width, self.height = 1280,720
+        self.cap.set(3,self.width)
+        self.cap.set(4,self.height)
     
     def start(self):
         self.update()
+
         
     def update(self):
         _, img = self.cap.read()
@@ -14,9 +18,7 @@ class WebCamReader():
         img = cv2.putText(img,str(can_write), (300,300), cv2.FONT_HERSHEY_COMPLEX,3,(255,0,0),3)
         if get_is_able_to_write() and not get_has_written():
             #predecimos iamgen
-            print('hey')
             key = cv2.waitKey(6)
-            print('hey2')
             if key == ord('w'):
                 character = 'T'
                 add_update_to_writed_text(character)

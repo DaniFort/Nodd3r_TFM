@@ -26,7 +26,7 @@ while True:
     lout.update()
 
     lout.draw()
-    cv2.imshow('image', get_frame_info())
+    cv2.imshow('Image', get_frame_info())
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
