@@ -1,5 +1,6 @@
 #text things
 writed_text = 'aqui se escribira el te xto\ndq rfw qerfw ejfqf gewga dpjasp fjaspfj apsfjpa sjfasf'
+writed_text = 'W'*34
 
 def get_writed_text():
     global writed_text
