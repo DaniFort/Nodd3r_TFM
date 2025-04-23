@@ -1,6 +1,7 @@
 #text things
-writed_text = 'aqui se escribira el te xto\ndq rfw qerfw ejfqf gewga dpjasp fjaspfj apsfjpa sjfasf'
-writed_text = 'W'*34
+full_registered_text = ''
+writed_text = 'aqui se escribira el texto que el usuario vaya escribiendo con sus manos aplicando símbolos'
+writed_text = ''
 
 def get_writed_text():
     global writed_text
@@ -8,12 +9,16 @@ def get_writed_text():
 
 def add_update_to_writed_text(text:str):
     global writed_text
+    global full_registered_text
     writed_text+=text
+    full_registered_text+= text
     return writed_text
 
 def rewrite_writed_text(text:str):
     global writed_text
+    global full_registered_text
     writed_text = text
+    full_registered_text = text
     return writed_text
 
 # prediction
@@ -31,8 +36,6 @@ def set_is_able_to_write(state:bool):
     is_able_to_write = state
     if state == False and has_written ==True :
         has_written = False
-
-
 
 def get_has_written():
     global has_written

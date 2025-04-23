@@ -11,6 +11,9 @@ class TextField():
         self.thickness = thickness
         self.line_spacing = line_spacing
     
+    def start(self):
+        pass
+    
     def update(self):
         pass
         
