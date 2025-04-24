@@ -67,7 +67,7 @@ class WritedTextField(TextField):
         if self.count >0.5:
             self.count = 0
             self.steps +=1
-            much = random.randint(2,4)
+            much = random.randint(2,3)
             add_update_to_writed_text(str(self.steps )*much+' ' )
     
 

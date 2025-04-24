@@ -7,12 +7,13 @@ import time
 
 
 LETTERS = ['A', 'B', 'C', 'D',  'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z','del', 'space']
-model_path = 'Trained/ASP_2_model_12.keras'
-model = tf.keras.models.load_model(model_path)
+model_path = 'Project/Trained/ASP_2_model_11.keras'
+
+model = tf.keras.models.load_model(model_path,compile=False)
 
 cap = cv2.VideoCapture(0)
 detector = HandDetector(maxHands=1)
-offset = 20
+offset = 70
 while True:
     success, img = cap.read()
     hands, img = detector.findHands(img,draw=False,flipType=True)
@@ -25,6 +26,7 @@ while True:
                 x-offset:x+w+offset
             ]
             imgCrop = cv2.resize(imgCrop,(300,300))
+            imgCrop = imgCrop/255
 
             data_to_predict = np.expand_dims(imgCrop,axis=0)
             predicction = model.predict(data_to_predict)
