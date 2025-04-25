@@ -1,6 +1,7 @@
 El momento de predecir hacer lista de todas las predicciones y coger la letra que más se repita.
 Pantalla completa?
 sonidito al predecir
+corregir posición texto en función cajita
 
 Extras:
 Modelo NLP para corregir ortografía

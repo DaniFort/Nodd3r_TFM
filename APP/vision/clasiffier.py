@@ -16,4 +16,14 @@ class Classifier():
         return char
     
     def finish_prediction(self):
-        pass
+        if len(self.last_predictions) <=0:
+            return None
+        char = ''
+        count = 0
+        for i in self.last_predictions:
+            if self.last_predictions.count(i) >count:
+                count = self.last_predictions.count(i)
+                char = i
+        print(char,'---->>',self.last_predictions)
+        self.last_predictions = []
+        return char
