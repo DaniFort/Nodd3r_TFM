@@ -1,5 +1,6 @@
 Pantalla completa?
 sonidito al predecir
+corregir error en palabra larga
 
 Extras:
 Modelo NLP para corregir ortografía
