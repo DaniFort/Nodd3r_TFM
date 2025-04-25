@@ -10,8 +10,15 @@ def get_writed_text():
 def add_update_to_writed_text(text:str):
     global writed_text
     global full_registered_text
-    writed_text+=text
-    full_registered_text+= text
+    if text == 'space':
+        writed_text+=' '
+        full_registered_text+= ' '
+    elif text == 'del':
+        writed_text = writed_text[:-1]
+        full_registered_text = full_registered_text[:-1]
+    else:
+        writed_text+=text
+        full_registered_text+= text
     return writed_text
 
 def rewrite_writed_text(text:str):

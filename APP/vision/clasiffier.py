@@ -1,15 +1,19 @@
 import tensorflow as tf
 import numpy as np
 # from utils.app_manager import add_update_to_writed_text
-model_path = 'APP/models/ASP_2_model_7.keras'
+model_path = 'APP/models/ASP_3_model_11.keras'
 LETTERS = ['A', 'B', 'C', 'D',  'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z','del', 'space']
 
 class Classifier():
     def __init__(self):
         self.model = tf.keras.models.load_model(model_path)
+        self.last_predictions = []
     
     def predict(self, img):
-        prediccion = self.model.predict(img)
+        prediccion = self.model.predict(img,verbose=0)
         char = LETTERS[np.argmax(prediccion)]
-        # add_update_to_writed_text(char)
+        self.last_predictions.append(char)
         return char
+    
+    def finish_prediction(self):
+        pass

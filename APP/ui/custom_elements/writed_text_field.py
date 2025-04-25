@@ -63,12 +63,12 @@ class WritedTextField(TextField):
         self.split_text()
 
         # only for test
-        self.count += time_control.deltatime
-        if self.count >0.5:
-            self.count = 0
-            self.steps +=1
-            much = random.randint(2,3)
-            add_update_to_writed_text(str(self.steps )*much+' ' )
+        # self.count += time_control.deltatime
+        # if self.count >0.5:
+        #     self.count = 0
+        #     self.steps +=1
+        #     much = random.randint(2,3)
+        #     add_update_to_writed_text(str(self.steps )*much+' ' )
     
 
     def draw(self):
