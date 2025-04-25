@@ -24,7 +24,7 @@ while True:
     
     
     lout.update()
-
+    
     lout.draw()
     cv2.imshow('Image', get_frame_info())
     key = cv2.waitKey(1)

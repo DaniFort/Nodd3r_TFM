@@ -11,8 +11,10 @@ class PartialText():
     def __init__(self, max_per_line = 42):
         self.len = 0
         self.text = ''
-        self.max_per_line = max_per_line
-    
+        if max_per_line >=15:
+            self.max_per_line = max_per_line
+        else:
+            self.max_char_per_line = 15    
     def add_word(self,word):
         if self.len + len(word) <= self.max_per_line:
             self.len += len(word)+1
@@ -22,9 +24,13 @@ class PartialText():
             return None  
 class WritedTextField(TextField):
               
-    def __init__(self, point:tuple,font_face = cv2.FONT_HERSHEY_PLAIN, color = (255,0,0),font_scale = 2,thickness=2,line_spacing = 10):
+    def __init__(self, point:tuple,font_face = cv2.FONT_HERSHEY_PLAIN, color = (255,0,0),font_scale = 2,thickness=2,line_spacing = 10,max_char_per_line=34):
         super().__init__('', point,font_face, color ,font_scale,thickness,line_spacing)
-        self.max_char_per_line = 34
+        if max_char_per_line >=15:
+            self.max_char_per_line = max_char_per_line
+        else:
+            self.max_char_per_line = 15
+            print('Warning: Text must contain minimum 15 characters')
         self.second_is_full = False
 
         # only for test
@@ -39,8 +45,8 @@ class WritedTextField(TextField):
 
     def split_text(self):
         parts = get_writed_text().split(' ')
-        self.t1 = PartialText()
-        self.t2 = PartialText()
+        self.t1 = PartialText(max_per_line=self.max_char_per_line)
+        self.t2 = PartialText(max_per_line=self.max_char_per_line)
         for i in range(len(parts)):
             added = self.t1.add_word(parts[0])
             if added == None:
@@ -61,7 +67,6 @@ class WritedTextField(TextField):
 
     def update(self):
         self.split_text()
-
         # only for test
         # self.count += time_control.deltatime
         # if self.count >0.5:
@@ -82,10 +87,10 @@ class WritedTextField(TextField):
             fontScale= self.font_scale,
             thickness= self.thickness,
         )
-        update_frame(img)
+        # update_frame(img)
 
         img = cv2.putText(
-            img=get_frame_info(),
+            img=img,
             text = self.t2.text,
             org=(self.point[0],self.point[1]+self.line_spacing),
             fontFace=self.font_face,
@@ -93,5 +98,6 @@ class WritedTextField(TextField):
             fontScale= self.font_scale,
             thickness= self.thickness,
         )
+
         update_frame(img)
 

@@ -1,7 +1,7 @@
 #text things
 full_registered_text = ''
-writed_text = 'aqui se escribira el texto que el usuario vaya escribiendo con sus manos aplicando símbolos'
 writed_text = ''
+writed_text = 'aqui se escribira el texto que el usuario vaya escribiendo con sus manos aplicando símbolos con las manos'
 
 def get_writed_text():
     global writed_text
