@@ -18,5 +18,4 @@ class SoundPlayer():
     def play_text_sound(self,text:str):
         tts = gTTS(text=text,lang='es')
         tts.save(word_file_path)
-        time.sleep(0.1)
         playsound(word_file_path, block=True)

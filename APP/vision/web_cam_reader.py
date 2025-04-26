@@ -45,8 +45,7 @@ class WebCamReader():
                     add_update_to_writed_text(char)
             except:
                 pass
-        img = cv2.putText(img,str(self.is_writing),(600,200),cv2.FONT_HERSHEY_SIMPLEX, 4, (0,0,255),3) 
-        img = cv2.putText(img,str(get_is_able_to_write()),(200,200),cv2.FONT_HERSHEY_SIMPLEX, 4, (0,0,255),3) 
+
         self.is_writing = get_is_able_to_write()
 
         update_frame(img)
