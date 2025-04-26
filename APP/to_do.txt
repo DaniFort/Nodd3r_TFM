@@ -1,8 +1,5 @@
 Pantalla completa?
-corregir error en palabra larga
-añadir cursor
 
 Extras:
 Modelo NLP para corregir ortografía
-Animación al escribir otra letra
 Decir en voz alta la letra

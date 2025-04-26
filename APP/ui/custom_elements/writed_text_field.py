@@ -32,10 +32,9 @@ class WritedTextField(TextField):
             self.max_char_per_line = 15
             print('Warning: Text must contain minimum 15 characters')
         self.second_is_full = False
-
-        # only for test
-        self.count = 0
-        self.steps = 0
+        self.cursor_time = 0.5
+        self.cursor_timer = 0
+        self.show_cursor = True
         
     
     def start(self):
@@ -67,17 +66,21 @@ class WritedTextField(TextField):
 
     def update(self):
         self.split_text()
-        # only for test
-        # self.count += time_control.deltatime
-        # if self.count >0.5:
-        #     self.count = 0
-        #     self.steps +=1
-        #     much = random.randint(2,3)
-        #     add_update_to_writed_text(str(self.steps )*much+' ' )
+        self.cursor_timer += time_control.deltatime
+        if self.cursor_timer >=self.cursor_time:
+            self.show_cursor = not self.show_cursor
+            self.cursor_timer = 0
+
     
 
     def draw(self):
         super().draw()
+        if self.show_cursor:
+            if self.t2.len>0:
+                self.t2.text = self.t2.text[:-1]+'_'
+            else:
+                self.t1.text = self.t1.text[:-1]+'_'
+
         img = cv2.putText(
             img=get_frame_info(),
             text = self.t1.text,
