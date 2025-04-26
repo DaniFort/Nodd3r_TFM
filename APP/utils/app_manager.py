@@ -14,10 +14,11 @@ def add_update_to_writed_text(text:str):
     global writed_text
     global full_registered_text
     if text == 'space':
+        last_word = writed_text.split(' ')[-1]
         writed_text+=' '
         full_registered_text+= ' '
         sp.play_space_added_sound()
-        # sp.play_text_sound('hooola')
+        sp.play_text_sound(last_word)
     elif text == 'del':
         writed_text = writed_text[:-1]
         full_registered_text = full_registered_text[:-1]

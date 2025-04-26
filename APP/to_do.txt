@@ -1,4 +1,3 @@
-Pantalla completa?
 
 Extras:
 Modelo NLP para corregir ortografía
