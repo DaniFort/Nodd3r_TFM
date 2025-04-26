@@ -12,7 +12,7 @@ class TextBox(Rectangle):
             font_scale=3,
             line_spacing = 60,
             color = text_color,
-            max_char_per_line = 2
+            max_char_per_line = 35
             )
 
     def start(self):

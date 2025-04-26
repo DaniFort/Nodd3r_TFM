@@ -24,6 +24,5 @@ class Classifier():
             if self.last_predictions.count(i) >count:
                 count = self.last_predictions.count(i)
                 char = i
-        print(char,'---->>',self.last_predictions)
         self.last_predictions = []
         return char
