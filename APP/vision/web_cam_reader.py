@@ -36,7 +36,7 @@ class WebCamReader():
                 img_pred = cv2.adaptiveThreshold(img_pred, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
                 cv2.imshow('ieee',img_pred)
                 img_pred = expand_dims(img_pred/255, axis=0)
-                prediction = self.model.predict(img_pred)
+                prediction = self.model.predict(img_pred,get_is_able_to_write())
                 img_crop = cv2.putText(img_crop,str(prediction),(30,60),cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,255),3) 
                 img[:200,get_frame_size()[1]-200:] = cv2.resize(img_crop,(200,200))
 

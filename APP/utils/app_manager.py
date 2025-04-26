@@ -3,6 +3,7 @@ from utils.sound_manager import SoundPlayer
 full_registered_text = ''
 writed_text = ''
 writed_text = 'aqui se escribira el texto que el usuario vaya escribiendo con sus manos aplicando símbolos con las manos'
+max_word_size = 20
 sp = SoundPlayer()
 def get_writed_text():
     global writed_text
@@ -22,6 +23,8 @@ def add_update_to_writed_text(text:str):
         full_registered_text = full_registered_text[:-1]
         sp.play_char_deleted_sound()
     else:
+        if len(writed_text.split(' ')[-1])>= max_word_size:
+            text = text+' '
         writed_text+=text
         full_registered_text+= text
         sp.play_char_added_sound()
