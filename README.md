@@ -12,7 +12,7 @@ El sistema combina una estructura de aplicación modular con un modelo de clasif
 <hr>
 
 <h2>🎓 Sobre este proyecto </h2>
-<p>Este proyecto fue desarrollado como parte de mi Trabajo Final de Máster de mi Máster en Data Science.  
+<p>Este proyecto fue desarrollado como parte de mi Trabajo Final de Máster de mi Máster en Data Science cursado en Nodd3r.  
 Es mi primer proyecto completo combinando visión por computadora, redes neuronales y desarrollo de aplicaciones en Python.</p>
 
 
