@@ -77,9 +77,9 @@ class WritedTextField(TextField):
         super().draw()
         if self.show_cursor:
             if self.t2.len>0:
-                self.t2.text = self.t2.text[:-1]+'_'
+                self.t2.text = self.t2.text[:-1]+'|'
             else:
-                self.t1.text = self.t1.text[:-1]+'_'
+                self.t1.text = self.t1.text[:-1]+'|'
 
         img = cv2.putText(
             img=get_frame_info(),

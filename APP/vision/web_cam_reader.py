@@ -10,8 +10,8 @@ class WebCamReader():
         self.cap = cv2.VideoCapture(0)
         # self.width, self.height = 500,500
         # self.width, self.height = 1080,1920
-        self.width, self.height = 720,1280
-        self.width, self.height = 720*3,1280*3
+        # self.width, self.height = 720*3,1280*3
+        self.width, self.height = 1920,1080*2
         self.cap.set(3,self.width)
         self.cap.set(4,self.height)
         self.detector = HandDetector(maxHands=1)

@@ -5,7 +5,6 @@ for index, img_path in enumerate(img_paths):
     img = cv2.imread(img_path)
     # img = img/255
     cv2.imshow(f'im{index}',img)
-
     img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     img = cv2.medianBlur(img, 5)
     img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)

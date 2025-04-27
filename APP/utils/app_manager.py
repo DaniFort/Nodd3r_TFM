@@ -2,7 +2,6 @@ from utils.sound_manager import SoundPlayer
 #text things
 full_registered_text = ''
 writed_text = ''
-writed_text = 'aqui se escribi'
 max_word_size = 20
 sp = SoundPlayer()
 def get_writed_text():
@@ -13,6 +12,7 @@ def add_update_to_writed_text(text:str):
     global sp
     global writed_text
     global full_registered_text
+
     if text == 'space':
         last_word = writed_text.split(' ')[-1]
         writed_text+=' '
