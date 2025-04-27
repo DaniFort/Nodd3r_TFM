@@ -2,7 +2,6 @@ from ui.layout import Layout
 from ui.custom_elements.animated_circle import AnimatedCircle
 from ui.custom_elements.writed_text_field import WritedTextField
 from ui.custom_elements.text_box import TextBox
-from ui.elements.rectangle import Rectangle
 from utils.image_flow import get_frame_size
 
 class RunningLayout(Layout):

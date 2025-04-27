@@ -10,7 +10,6 @@ def get_resource_path(relative_path):
     except Exception:
 
         base_path = os.path.abspath(".")
-    print(os.path.join(base_path, relative_path))
     return os.path.join(base_path, relative_path)
 
 char_added_path = "APP/Files/Sounds/write_sound.wav"

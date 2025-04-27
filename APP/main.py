@@ -1,4 +1,3 @@
-# import time_control
 from utils import time_control
 from ui.custom_elements.running_layout import RunningLayout
 from vision.web_cam_reader import WebCamReader

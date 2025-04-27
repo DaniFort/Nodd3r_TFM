@@ -1,9 +1,8 @@
 from ui.elements.circle import Circle 
 from utils import time_control
-from utils.image_flow import get_frame_info, update_frame
-from utils.app_manager import get_is_able_to_write, set_is_able_to_write
+from utils.image_flow import get_frame_info
+from utils.app_manager import  set_is_able_to_write
 import math
-import cv2
 
 class AnimatedCircle(Circle):
     def __init__(self, x,y,radius=10, thickness = 5, color =(224,220,102),max_radius=50, min_radius=25, max_thickness=10, min_thickness=3, animation_speed=4):

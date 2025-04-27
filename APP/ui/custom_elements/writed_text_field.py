@@ -1,5 +1,5 @@
 from ui.elements.text_field import TextField
-from utils.app_manager import get_writed_text,add_update_to_writed_text,rewrite_writed_text
+from utils.app_manager import get_writed_text,rewrite_writed_text
 from utils.image_flow import get_frame_info,update_frame
 from utils import time_control
 

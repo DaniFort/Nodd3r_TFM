@@ -1,6 +1,6 @@
 import cv2
-from utils.image_flow import update_frame, get_frame_info, get_frame_size
-from utils.app_manager import get_writed_text,add_update_to_writed_text,get_is_able_to_write,set_is_able_to_write
+from utils.image_flow import update_frame, get_frame_size
+from utils.app_manager import add_update_to_writed_text,get_is_able_to_write
 from vision.clasiffier import Classifier
 from cvzone.HandTrackingModule import HandDetector
 from numpy import expand_dims

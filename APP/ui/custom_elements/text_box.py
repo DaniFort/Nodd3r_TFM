@@ -1,6 +1,5 @@
 from ui.elements.rectangle import Rectangle
 from ui.custom_elements.writed_text_field import WritedTextField
-import cv2
 class TextBox(Rectangle):
     def __init__(self, p1,p2, thickness = 5, rectangle_color=(255,255,255),text_color=(0,0,0),x_margin = 10, y_margin = 10,text_thickness = 2):
         super().__init__(p1,p2,thickness,rectangle_color)
