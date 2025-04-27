@@ -1,0 +1,14 @@
+numpy
+pandas
+tensorflow
+keras
+sklearn
+cv2
+cvzone
+mediapipe
+pygame
+gtts
+time
+os
+shutil
+PIL

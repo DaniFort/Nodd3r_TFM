@@ -10,3 +10,4 @@
 /Project/AumentedData - copia/
 *.pyc
 __pycache__/
+.DS_Store

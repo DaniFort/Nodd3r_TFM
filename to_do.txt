@@ -1,0 +1,4 @@
+Igual cambiar colores
+settings
+Extras:
+Modelo NLP para corregir ortografía
