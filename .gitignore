@@ -9,3 +9,4 @@
 /Project/AumentedData/
 /Project/AumentedData - copia/
 *.pyc
+__pycache__/
