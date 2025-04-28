@@ -39,14 +39,11 @@ for letter in LETTERS:
                     x-OFFSET:x+w+OFFSET
                 ]
                 img = cv2.resize(img,(300,300))
-                # img = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-                # img = cv2.adaptiveThreshold(img,255,cv2.ADAPTIVE_THRESH_MEAN_C)
-                has_hands, img = detector.findHands(img,draw=False)
-                if has_hands:
-                    counter+=1
-                    category = 'train' if counter < 500 else 'validation' if counter < 700 else 'test'
-                    dst = os.path.join('dataset',category,letter,img_name)
-                    cv2.imwrite(dst,img)
+
+                counter+=1
+                category = 'train' if counter < 500 else 'validation' if counter < 700 else 'test'
+                dst = os.path.join('dataset',category,letter,img_name)
+                cv2.imwrite(dst,img)
 
             except:
                 pass

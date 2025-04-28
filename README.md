@@ -53,12 +53,19 @@ Es mi primer proyecto completo combinando visión por computadora, redes neurona
 <li>sys</li>
 </ul>
 
+<h2>📊 Datos utilizados</h2>
+<ul>
+<li>https://www.kaggle.com/datasets/debashishsau/aslamerican-sign-language-aplhabet-dataset</li>
+</ul>
+
+
 <hr>
 
 <h2>🚀 Cómo ejecutar</h2>
 <ol>
 <li>Clona este repositorio.</li>
 <li>Asegúrate de tener todos los paquetes instalados.</li>
+<li>Asegúrate de que no haya otro programa usando la cámara de tu dispositivo.</li>
 <li>Puedes ejecutar el archivo <code>main.py</code> de la carpeta <strong>APP</strong>.
 </ol>
 

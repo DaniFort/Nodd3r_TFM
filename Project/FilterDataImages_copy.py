@@ -17,9 +17,6 @@ for letter in LETTERS:
     t0 = datetime.now()
     if not os.path.exists(os.path.join(DESTINY_PATH,letter)):
         os.mkdir(os.path.join(DESTINY_PATH,letter))
-        # os.mkdir(os.path.join('dataset',letter,))
-        # os.mkdir(os.path.join('dataset',letter,))
-        # os.mkdir(os.path.join('dataset',letter))
     imgs = np.array(os.listdir(os.path.join(BASE_PATH,letter)))
     counter = 0
     times = 0

@@ -10,8 +10,7 @@ class WebCamReader():
         self.cap = cv2.VideoCapture(0)
         # self.width, self.height = 500,500
         # self.width, self.height = 1080,1920
-        # self.width, self.height = 720*3,1280*3
-        self.width, self.height = 1920,1080*2
+        self.width, self.height = 1920,1080
         self.cap.set(3,self.width)
         self.cap.set(4,self.height)
         self.detector = HandDetector(maxHands=1)
@@ -35,7 +34,7 @@ class WebCamReader():
                 img_pred = cv2.cvtColor(img_crop, cv2.COLOR_BGR2GRAY)
                 img_pred = cv2.medianBlur(img_pred, 5)
                 img_pred = cv2.adaptiveThreshold(img_pred, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,11,2)
-                # cv2.imshow('ieee',img_pred)
+                # cv2.imshow('Mano',img_pred)
                 img_pred = expand_dims(img_pred/255, axis=0)
                 prediction = self.model.predict(img_pred,get_is_able_to_write())
                 img_crop = cv2.putText(img_crop,str(prediction),(30,60),cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,255),3) 

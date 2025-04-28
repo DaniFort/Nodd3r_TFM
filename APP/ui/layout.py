@@ -11,31 +11,30 @@ class Layout():
         return element
     
     def start(self):
-        # for i in self.elements:
-        #     try:
-        #         i.start()
-        #     except:
-        #         pass    
-        for i in self.elements: #only for test
-            i.start()
+        for i in self.elements:
+            try:
+                i.start()
+            except:
+                pass    
+        # for i in self.elements: #only for test
+        #     i.start()
     
     def update(self):
-        # for i in self.elements:
-        #     try:
-        #         i.update()
-        #     except:
-        #         pass
-        for i in self.elements: #only for test
-            i.update()
+        for i in self.elements:
+            try:
+                i.update()
+            except:
+                pass
+        # for i in self.elements: #only for test
+        #     i.update()
 
     def draw(self):
-        # for i in self.elements:
-            # try:
-            #     i.draw()
-            # except:
-            #     print('noup')
-            #     pass
-        for i in self.elements: #only for test
-            i.draw()
+        for i in self.elements:
+            try:
+                i.draw()
+            except:
+                pass
+        # for i in self.elements: #only for test
+        #     i.draw()
     
     
