@@ -59,7 +59,7 @@ Es mi primer proyecto completo combinando visión por computadora, redes neurona
 <ol>
 <li>Clona este repositorio.</li>
 <li>Asegúrate de tener todos los paquetes instalados.</li>
-<li>Puedes ejecutar el archivo <code>main.py</code> de la carpeta <strong>APP</strong> o bien, ejecutar el <code>.exe</code> de la carpeta <strong>build</strong>.</li>
+<li>Puedes ejecutar el archivo <code>main.py</code> de la carpeta <strong>APP</strong>.
 </ol>
 
 <hr>
