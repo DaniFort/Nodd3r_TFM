@@ -1,8 +1,7 @@
 /code/Data
 /originaldatacopy/
-/code/record/
-/code/test_data/
-/TFRecords/train.tfrecord
+/code
+/TFRecords
 /Project/ASL_Alphabet_Dataset
 /Project/data
 /Project/dataset
