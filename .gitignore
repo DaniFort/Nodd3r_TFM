@@ -10,3 +10,5 @@
 *.pyc
 __pycache__/
 .DS_Store
+st_env/
+open_enviroment.txt
