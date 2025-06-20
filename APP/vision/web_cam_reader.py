@@ -1,18 +1,20 @@
 import cv2
-from utils.image_flow import update_frame, get_frame_size
+from utils.image_flow import update_frame, get_frame_size, get_frame_info
 from utils.app_manager import add_update_to_writed_text,get_is_able_to_write
 from vision.clasiffier import Classifier
 from cvzone.HandTrackingModule import HandDetector
 from numpy import expand_dims
 
 class WebCamReader():
-    def __init__(self):
-        self.cap = cv2.VideoCapture(0)
-        # self.width, self.height = 500,500
-        # self.width, self.height = 1080,1920
-        self.width, self.height = 1920,1080
-        self.cap.set(3,self.width)
-        self.cap.set(4,self.height)
+    def __init__(self, is_web = False):
+        self.is_web = is_web
+        if not is_web:
+            self.cap = cv2.VideoCapture(0)
+            # self.width, self.height = 500,500
+            # self.width, self.height = 1080,1920
+            self.width, self.height = 1920,1080
+            self.cap.set(3,self.width)
+            self.cap.set(4,self.height)
         self.detector = HandDetector(maxHands=1)
         self.model = Classifier()
         self.is_writing = False
@@ -22,7 +24,11 @@ class WebCamReader():
 
         
     def update(self):
-        _, img = self.cap.read()
+        if not self.is_web:
+            _, img = self.cap.read()
+        else:
+            img = get_frame_info()
+
         hands, img = self.detector.findHands(img, draw=False, flipType=True)
         if hands:
             hand = hands[0]
