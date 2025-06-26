@@ -84,7 +84,7 @@ with col1:
 with col2:
     try:
         st.markdown("### 📘 Guía de símbolos")
-        symbols_image = Image.open("Plantilla_lenguaje.jpg")
+        symbols_image = Image.open("PlantillaLenguaje.jpg")
         st.image(symbols_image, caption="Tabla de símbolos del lenguaje de signos", use_container_width=True)
     except:
         st.warning("No se encontró la imagen 'symbols_guide.jpg'.")
