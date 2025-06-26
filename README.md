@@ -15,6 +15,20 @@ El sistema combina una estructura de aplicación modular con un modelo de clasif
 <p>Este proyecto fue desarrollado como parte de mi Trabajo Final de Máster de mi Máster en Data Science cursado en Nodd3r.  
 Es mi primer proyecto completo combinando visión por computadora, redes neuronales y desarrollo de aplicaciones en Python.</p>
 
+<hr>
+
+<h2>📁 Estructura del repositorio </h2>
+<ul>
+<li><strong>APP</strong> : Código principal del flujo de la aplicación.</li>
+<li><strong>ExploringPredictionResults</strong> : Gráficos y análisis de los resultados de predicción.</li>
+<li><strong>Project</strong> : Notebooks y scripts usados para la exploración y tratamiento de datos.</li>
+<li><strong>Training</strong> : Entrenamiento de modelos.</li>
+<li><strong>LinkVideoPresentacion.txt</strong> : Link al vídeo donde presento el trabajo.</li>
+<li><strong>Paper.pdf</strong> : Documento con la memoria escrita del desarrollo de la aplicación.</li>
+<li><strong>requirements.txt</strong> : Lista de librerías necesarias para ejecutar el proyecto.</li>
+
+</ul>
+
 
 
 <hr>
@@ -28,10 +42,6 @@ Es mi primer proyecto completo combinando visión por computadora, redes neurona
 <li>Predicción de texto basada en gestos individuales.</li>
 </ul>
 
-<hr>
-
-<h2>📁 Estructura del repositorio</h2>
-<p><em>[FALTA RELLENAR]</em></p>
 
 <hr>
 
@@ -68,6 +78,7 @@ Es mi primer proyecto completo combinando visión por computadora, redes neurona
 <li>Asegúrate de que no haya otro programa usando la cámara de tu dispositivo.</li>
 <li>Puedes ejecutar el archivo <code>main.py</code> de la carpeta <strong>APP</strong>.
 </ol>
+<br>También puedes probar esta versión adaptada a streamlit.<br/>
 
 <hr>
 
