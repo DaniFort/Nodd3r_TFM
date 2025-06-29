@@ -16,7 +16,7 @@ class WebCamReader():
             self.cap.set(3,self.width)
             self.cap.set(4,self.height)
         self.detector = HandDetector(maxHands=1)
-        self.model = Classifier()
+        self.model = Classifier(self.is_web)
         self.is_writing = False
     
     def start(self):
