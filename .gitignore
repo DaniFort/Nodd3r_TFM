@@ -13,5 +13,5 @@ __pycache__/
 st_env/
 open_enviroment.txt
 requirements2.txt
-runtime.txt
 env310/
+tf_315/

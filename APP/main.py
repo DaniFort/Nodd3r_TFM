@@ -10,7 +10,7 @@ import cv2
 time_controller = time_control.FrameTimer(fps=60)
 
 counter = 0
-wc = WebCamReader()
+wc = WebCamReader(is_web=True)
 lout = RunningLayout()
     
 wc.start()
