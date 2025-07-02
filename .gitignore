@@ -12,6 +12,5 @@ __pycache__/
 .DS_Store
 st_env/
 open_enviroment.txt
-requirements2.txt
 env310/
 tf_315/

@@ -2,10 +2,9 @@ numpy
 pandas
 tensorflow==2.15.0
 scikit-learn
-opencv-python
+opencv-python-headless
 cvzone
 mediapipe
-pygame
 gTTS
 Pillow
 streamlit
