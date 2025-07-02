@@ -1,5 +1,5 @@
-from gtts import gTTS
-import pygame
+# from gtts import gTTS
+# import pygame
 import os
 import sys
 
@@ -19,21 +19,27 @@ word_file_path = "APP/Files/Sounds/voice_sound.wav"
 
 class SoundPlayer():
     def __init__(self):
-        pygame.mixer.init()
+        pass
+        # pygame.mixer.init()
 
     def play_char_added_sound(self):
-        sound = pygame.mixer.Sound(get_resource_path(char_added_path))
-        sound.play()
+        pass
+        # sound = pygame.mixer.Sound(get_resource_path(char_added_path))
+        # sound.play()
 
     def play_char_deleted_sound(self):
-        sound = pygame.mixer.Sound(get_resource_path(char_deleted_path))
-        sound.play()
+        pass
+        # sound = pygame.mixer.Sound(get_resource_path(char_deleted_path))
+        # sound.play()
 
     def play_space_added_sound(self):
-        sound = pygame.mixer.Sound(get_resource_path(space_added_path))
-        sound.play()
+        pass
+        # sound = pygame.mixer.Sound(get_resource_path(space_added_path))
+        # sound.play()
+        
     def play_text_sound(self,text:str):
-        tts = gTTS(text=text,lang='es')
-        tts.save(get_resource_path(word_file_path))
-        sound = pygame.mixer.Sound(get_resource_path(word_file_path))
-        sound.play()
+        pass
+        # tts = gTTS(text=text,lang='es')
+        # tts.save(get_resource_path(word_file_path))
+        # sound = pygame.mixer.Sound(get_resource_path(word_file_path))
+        # sound.play()
