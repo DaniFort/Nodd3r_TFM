@@ -11,7 +11,10 @@ class RunningLayout(Layout):
         
     def start(self):
         img_size = get_frame_size()
-        animated_circle = AnimatedCircle(41,40,min_radius=4,max_radius=33,max_thickness=12,min_thickness=2,animation_speed=3)
+        writting_speed= 2
+        with open('APP\Files\writting_speed.txt','r') as file:
+            writting_speed = float(file.read())
+        animated_circle = AnimatedCircle(41,40,min_radius=4,max_radius=33,max_thickness=12,min_thickness=2,animation_speed=writting_speed)
 
         text_box = TextBox((0,img_size[0]-74),(img_size[1], img_size[0]),
                            thickness=-1, rectangle_color=(197,197,197),text_color=(203,191,2),x_margin=20, y_margin=30,text_thickness=4)

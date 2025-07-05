@@ -38,10 +38,17 @@ st.markdown("Código fuente del proyecto: 🔗 GitHub [Ir al repositorio de GitH
 
 st.markdown("---")
 
+writting_speed = st.slider('Velocidad de escritura: ',min_value = 0.5, max_value = 7.0, value = 3.0, step = 0.25)
+
+st.markdown("---")
+
 # st.header("HandsTalk Demo")
 
 class VideoTransformer(VideoTransformerBase):
     def __init__(self):
+        with open('APP\Files\writting_speed.txt','w') as file:
+            file.write(str(writting_speed))
+        print()
         self.time_controller = time_control.FrameTimer()
         self.wc = WebCamReader(is_web=True)
         self.lout = RunningLayout()
@@ -68,8 +75,8 @@ class VideoTransformer(VideoTransformerBase):
 st.markdown("## 📷 HandsTalk Demo ")
 
 col1, col2 = st.columns([2, 1]) 
-heigh, width = 720,1280
-heigh, width = 360,640
+# heigh, width = 720,1280
+heigh, width = 480,640
 with col1:
     webrtc_streamer(
         key='example',
