@@ -44,7 +44,7 @@ class WebCamReader():
                 img_pred = expand_dims(img_pred/255, axis=0)
                 prediction = self.model.predict(img_pred,get_is_able_to_write())
                 img_crop = cv2.putText(img_crop,str(prediction),(30,60),cv2.FONT_HERSHEY_SIMPLEX, 2, (0,0,255),3) 
-                img[:200,get_frame_size()[1]-200:] = cv2.resize(img_crop,(200,200))
+                img[:100,get_frame_size()[1]-100:] = cv2.resize(img_crop,(100,100))
 
                 if not get_is_able_to_write() and  self.is_writing:
                     char = self.model.finish_prediction()

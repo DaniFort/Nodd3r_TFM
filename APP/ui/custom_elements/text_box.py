@@ -11,7 +11,7 @@ class TextBox(Rectangle):
             font_scale=2,
             line_spacing = 35,
             color = text_color,
-            max_char_per_line = 28,
+            max_char_per_line = 30,
             thickness=text_thickness
             )
 
