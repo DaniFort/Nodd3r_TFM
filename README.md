@@ -78,7 +78,8 @@ Es mi primer proyecto completo combinando visión por computadora, redes neurona
 <li>Asegúrate de que no haya otro programa usando la cámara de tu dispositivo.</li>
 <li>Puedes ejecutar el archivo <code>main.py</code> de la carpeta <strong>APP</strong>.
 </ol>
-<br>También puedes probar esta versión adaptada a streamlit.<br/>
+<br>También puedes probar esta versión adaptada a streamlit. <br/>
+https://handstalk.streamlit.app/
 
 <hr>
 
