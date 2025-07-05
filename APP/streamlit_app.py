@@ -10,7 +10,6 @@ from utils.image_flow import get_frame_info, update_frame
 from utils import time_control
 from utils.app_manager import rewrite_writed_text
 
-
 st.set_page_config(page_title="Hands Talk", layout="centered")
 
 st.title("🧠 HANDS TALK - Transcriptor de lenguaje de signos con IA")
@@ -64,19 +63,21 @@ class VideoTransformer(VideoTransformerBase):
         self.lout.draw()
 
         return img
+    
 
 st.markdown("## 📷 HandsTalk Demo ")
 
 col1, col2 = st.columns([2, 1]) 
-
+heigh, width = 720,1280
+heigh, width = 360,640
 with col1:
     webrtc_streamer(
         key='example',
         video_transformer_factory=VideoTransformer,
         media_stream_constraints={
             'video': {
-                'width':{'ideal':1280},
-                'heigh':{'ideal':720},
+                'heigh':{'ideal':heigh},
+                'width':{'ideal':width},
             }, 
             'audio': False}
     )
