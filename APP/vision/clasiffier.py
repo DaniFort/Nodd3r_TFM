@@ -6,7 +6,6 @@ LETTERS = ['A', 'B', 'C', 'D',  'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N'
 
 class Classifier():
     def __init__(self, is_web):
-        print('---------\n'*10,model_path if not is_web else model_web_path,'---------\n'*10)
         self.model = tf.keras.models.load_model(model_path if not is_web else model_web_path)
         self.last_predictions = []
     

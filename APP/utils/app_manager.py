@@ -1,7 +1,7 @@
 from utils.sound_manager import SoundPlayer
 #text things
-full_registered_text = ''
-writed_text = ''
+full_registered_text = 'dasf daf   dasf d as fas dfd safd fds fd fdsfdsf sdfdsf dsfdsf ds fsd'
+writed_text = 'dasf daf   dasf d as fas dfd safd fds fd fdsfdsf sdfdsf dsfdsf ds fsd'
 max_word_size = 20
 sp = SoundPlayer()
 def get_writed_text():

@@ -8,10 +8,10 @@ class TextBox(Rectangle):
 
         self.text = WritedTextField(
             point=(p1[0]+x_margin, p1[1]+y_margin),
-            font_scale=3,
-            line_spacing = 60,
+            font_scale=2,
+            line_spacing = 35,
             color = text_color,
-            max_char_per_line = 40,
+            max_char_per_line = 28,
             thickness=text_thickness
             )
 
