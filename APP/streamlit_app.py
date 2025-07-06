@@ -34,7 +34,7 @@ Características principales:
 
 st.markdown("---")
 
-st.markdown("Código fuente del proyecto: 🔗 GitHub [Ir al repositorio de GitHub](https://github.com/DaniFort/Nodd3r_TFM)")
+st.markdown("Código fuente del proyecto: 🔗 GitHub [Ir al repositorio de GitHub](https://github.com/DaniFort/HandsTalk)")
 
 st.markdown("---")
 
