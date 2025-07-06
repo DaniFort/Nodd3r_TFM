@@ -9,7 +9,7 @@ from datetime import datetime
 BASE_PATH = 'ASL_Alphabet_Dataset/asl_alphabet_train'
 LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S',  'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'del','space']
 DESTINY_PATH = 'AumentedData'
-IMG_PER_CLASS = 2000
+IMG_PER_CLASS = 2000    
 OFFSET = 70
 detector = HandDetector(maxHands=1)
 t0_abs = datetime.now()
@@ -25,7 +25,7 @@ for letter in LETTERS:
         times +=1
         img_path = os.path.join(BASE_PATH,letter,img_name)
         img = cv2.imread(img_path)
-        img = cv2.resize(img,(512,512))
+        # img = cv2.resize(img,(512,512))
         hands, img = detector.findHands(img,draw=False)
         if hands:#filtro 1
             hand = hands[0]
@@ -53,9 +53,9 @@ for letter in LETTERS:
                 pass
         else:
             no_detected +=1
-        if counter >= IMG_PER_CLASS:
-            break
-        cv2.waitKey(1)
+        # if counter >= IMG_PER_CLASS:
+        #     break
+        # cv2.waitKey(1)
     result = f'{letter} has {times} images and  {counter} detectable elements and {no_detected} no detected\n in {datetime.now()-t0}'
     print(result)
     with open('Resume images.txt','a')as f:

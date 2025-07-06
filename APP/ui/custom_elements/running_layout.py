@@ -11,10 +11,10 @@ class RunningLayout(Layout):
         
     def start(self):
         img_size = get_frame_size()
-        animated_circle = AnimatedCircle(115,110,min_radius=13,max_radius=100,max_thickness=30,min_thickness=3,animation_speed=2)
+        animated_circle = AnimatedCircle(41,40,min_radius=4,max_radius=33,max_thickness=12,min_thickness=2,animation_speed=3)
 
-        text_box = TextBox((0,img_size[0]-150),(img_size[1], img_size[0]),
-                           thickness=-1, rectangle_color=(197,197,197),text_color=(203,191,2),x_margin=20, y_margin=60,text_thickness=4)
+        text_box = TextBox((0,img_size[0]-74),(img_size[1], img_size[0]),
+                           thickness=-1, rectangle_color=(197,197,197),text_color=(203,191,2),x_margin=20, y_margin=30,text_thickness=4)
         self.add_element(animated_circle)
 
         self.add_element(text_box)
