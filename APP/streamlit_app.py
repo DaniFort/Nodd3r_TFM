@@ -20,8 +20,8 @@ st.markdown("---")
 
 st.markdown("""
 Este proyecto es una versión adaptada a streamlit de mi proyecto final de Máster en Data Science cursado en Nodd3r.\n
-Este proyecto es una aplicación desarrollada en Python que permite al usuario escribir utilizando de lenguaje de signos en tiempo real. El sistema combina una estructura de aplicación modular con un modelo de clasificación entrenado para interpretar signos.
-Es mi primer proyecto completo combinando visión por computadora, redes neuronales y desarrollo de aplicaciones en Python.
+Esta aplicación desarrollada en Python que permite al usuario escribir utilizando el alfabeto del lenguaje de signos americano en tiempo real. El sistema combina una estructura de aplicación modular con un modelo de clasificación entrenado para interpretar signos.
+Es mi primer proyecto completo combinando computer vision,redes neuronales y desarrollo de aplicaciones en Python con OpenCV y streamlit.
 
 Características principales:
 - Escritura mediante gestos captados en tiempo real.
