@@ -48,23 +48,27 @@ for letter in LETTERS:
                     x-OFFSET:x+w+OFFSET
                 ]
                 img = cv2.resize(img,(300,300))
-                has_hands, img = detector.findHands(img,draw=False)
-                if has_hands:#filtro 2
-                    test2_passed +=1
-                    has_hands2,img = detector.findHands(img,draw=False)
+                category = 'train'
+                dst = os.path.join(DESTINY_PATH,letter,img_name)
+                cv2.imwrite(dst,img)
+                counter+=1
+                # has_hands, img = detector.findHands(img,draw=False)
+                # if has_hands:#filtro 2
+                #     test2_passed +=1
+                #     has_hands2,img = detector.findHands(img,draw=False)
 
-                    if has_hands2:#filtro 3
-                        test3_passed +=1
-                        counter+=1
-                        category = 'train'
-                        dst = os.path.join(DESTINY_PATH,letter,img_name)
-                        cv2.imwrite(dst,img)
-                    else:
-                        no_detected+=1
-                        take_notes_no_detected(img_path)
-                else:
-                    no_detected+=1
-                    take_notes_no_detected(img_path)
+                #     if has_hands2:#filtro 3
+                #         test3_passed +=1
+                #         counter+=1
+                #         category = 'train'
+                #         dst = os.path.join(DESTINY_PATH,letter,img_name)
+                #         cv2.imwrite(dst,img)
+                #     else:
+                #         no_detected+=1
+                #         take_notes_no_detected(img_path)
+                # else:
+                #     no_detected+=1
+                #     take_notes_no_detected(img_path)
             except:
                 pass
         else:
@@ -81,11 +85,13 @@ for letter in LETTERS:
 final_text = f'''
 Total imágenes analizadas: {total_imgs}
 Imagenes que han pasado el test 1: {test1_passed} ---> {test1_passed / total_imgs *100}%
-Imagenes que han pasado el test 2: {test2_passed} ---> {test2_passed / total_imgs *100}%
-Imagenes que han pasado el test 3: {test3_passed} ---> {test2_passed / total_imgs *100}%
 '''
+# Imagenes que han pasado el test 2: {test2_passed} ---> {test2_passed / total_imgs *100}%
+# Imagenes que han pasado el test 3: {test3_passed} ---> {test2_passed / total_imgs *100}%
+print(final_text)
 final_text = final_text + f'\ntask done in {datetime.now() - t0_abs}'
-with open('Resume images.txt','a')as f:
+print(final_text)
+with open('Resumenimagenespost2.txt','a')as f:
     f.write(f'Resume text done in {datetime.now()}')
     f.write(final_text)
 
